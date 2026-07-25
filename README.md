@@ -3,6 +3,8 @@
 A single-page, keyboard-driven presentation for a YouTube comparison video. No backend,
 no build step — plain HTML/CSS/JS.
 
+**Live:** [tejash5489-lang.github.io/ai-keynote-gpt56-vs-fable5](https://tejash5489-lang.github.io/ai-keynote-gpt56-vs-fable5/)
+
 ## Run it
 
 ```bash
