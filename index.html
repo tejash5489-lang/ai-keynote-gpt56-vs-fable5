@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPT-5.6 vs Claude Fable 5 — a keynote</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="brackets" aria-hidden="true">
+  <span class="bracket tl"></span>
+  <span class="bracket tr"></span>
+  <span class="bracket bl"></span>
+  <span class="bracket br"></span>
+</div>
+
+<header class="chrome">
+  <div class="chrome-left">
+    <span class="logo-mark">◆</span>
+    <span class="logo-text">SOL/TERRA/LUNA <em>vs</em> FABLE&nbsp;5</span>
+  </div>
+  <div class="chrome-right">
+    <span class="section-label" id="sectionLabel">00 · TITLE</span>
+  </div>
+</header>
+
+<div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<main id="deck">
+
+  <!-- ===================== CH 00 — TITLE ===================== -->
+  <section class="chapter" data-chapter="0" data-title="00 · TITLE">
+    <div class="stage stage-title">
+      <p class="eyebrow" data-beat="0">A YOUTUBE COMPARISON · JULY 2026</p>
+      <h1 class="display-huge">
+        <span class="line" data-beat="1">GPT&#8209;5.6</span>
+        <span class="line sub-mono" data-beat="2">SOL &nbsp;·&nbsp; TERRA &nbsp;·&nbsp; LUNA</span>
+        <span class="line versus" data-beat="3">vs</span>
+        <span class="line" data-beat="4">Claude Fable&nbsp;5</span>
+      </h1>
+      <p class="caption italic" data-beat="5">Two frontier labs, two releases, nine days apart — June&nbsp;9 → July&nbsp;9, 2026.</p>
+      <p class="hint" data-beat="0">← → to navigate&nbsp;&nbsp;·&nbsp;&nbsp;F for fullscreen</p>
+    </div>
+  </section>
+
+  <!-- ===================== CH 01 — NAMING ===================== -->
+  <section class="chapter" data-chapter="1" data-title="01 · THE LINEUP">
+    <div class="stage stage-naming">
+      <h2 class="display-med" data-beat="0">Three tiers. One family.</h2>
+      <p class="caption italic" data-beat="0">Click a card to pin it as your focus.</p>
+
+      <div class="tier-cards" id="tierCards">
+        <button class="tier-card" data-beat="1" data-tier="sol">
+          <span class="tier-name">SOL</span>
+          <span class="tier-role">Flagship — hardest coding &amp; security work</span>
+          <span class="tier-price">$5&nbsp;/&nbsp;$30 <em>per MTok</em></span>
+        </button>
+        <button class="tier-card" data-beat="2" data-tier="terra">
+          <span class="tier-name">TERRA</span>
+          <span class="tier-role">Mid tier — high-volume business tasks</span>
+          <span class="tier-price">$2.50&nbsp;/&nbsp;$15 <em>per MTok</em></span>
+        </button>
+        <button class="tier-card" data-beat="3" data-tier="luna">
+          <span class="tier-name">LUNA</span>
+          <span class="tier-role">Fast &amp; cheap — summarizing, drafting, routine work</span>
+          <span class="tier-price">$1&nbsp;/&nbsp;$6 <em>per MTok</em></span>
+        </button>
+        <button class="tier-card accent-card" data-beat="4" data-tier="fable">
+          <span class="tier-name">FABLE&nbsp;5</span>
+          <span class="tier-role">Mythos-class — one rung above Opus</span>
+          <span class="tier-price">$10&nbsp;/&nbsp;$50 <em>per MTok</em></span>
+        </button>
+      </div>
+      <p class="footnote" data-beat="4">Anthropic ships tiers too — just not three at once. Opus&nbsp;5 undercuts Fable&nbsp;5 at $5&nbsp;/&nbsp;$25.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CH 02 — EFFORT ===================== -->
+  <section class="chapter" data-chapter="2" data-title="02 · HOW HARD SHOULD IT THINK">
+    <div class="stage stage-effort">
+      <h2 class="display-med" data-beat="0">Old ceiling: <span class="old-ceiling">HIGH</span>.</h2>
+
+      <div class="effort-ladders" data-beat="1">
+        <div class="ladder">
+          <p class="ladder-label">GPT-5.6</p>
+          <ol class="rungs">
+            <li>low</li><li>medium</li><li>high</li><li>xhigh</li><li>max</li>
+            <li class="rung-ultra" data-beat="2">ultra <span class="rung-tag">4 agents, parallel</span></li>
+          </ol>
+        </div>
+        <div class="ladder">
+          <p class="ladder-label">Claude API <span class="mono-tiny">(effort param)</span></p>
+          <ol class="rungs">
+            <li>low</li><li>medium</li><li class="rung-default">high <span class="rung-tag">default</span></li><li>xhigh</li><li>max</li>
+            <li class="rung-none" data-beat="3">— <span class="rung-tag">no model-layer equivalent</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <p class="callout" data-beat="3">Both labs converged on nearly the same five rungs. OpenAI added a sixth, different axis — parallel agents, not deeper thought. Anthropic keeps multi-agent work one layer up, in the harness (Claude Code / Managed Agents).</p>
+
+      <div class="accordion" data-beat="2">
+        <button class="accordion-toggle" aria-expanded="false">How the <code>effort</code> parameter actually works ⌄</button>
+        <div class="accordion-body">
+          <p>On Claude, <code>effort</code> shapes <em>all</em> token spend — text, tool calls, and thinking — not just a reasoning budget. Anthropic's API default is <strong>high</strong>, not low. On GPT-5.6, effort levels are a single-agent thinking dial; <strong>Ultra</strong> is a separate, harness-level mode that runs four agents at once and is not selectable as a 6th "deeper" effort value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CH 03 — COST ===================== -->
+  <section class="chapter" data-chapter="3" data-title="03 · PRICE PER MILLION TOKENS">
+    <div class="stage stage-cost">
+      <h2 class="display-med" data-beat="0">Same table. Different rows.</h2>
+
+      <div class="switch-row" data-beat="1">
+        <div class="segmented" id="costSwitch" role="tablist" aria-label="Pricing direction">
+          <button class="seg-btn active" data-mode="input" role="tab" aria-selected="true">Input</button>
+          <button class="seg-btn" data-mode="output" role="tab" aria-selected="false">Output</button>
+        </div>
+        <span class="mono-tiny">$ per 1M tokens</span>
+      </div>
+
+      <div class="bar-chart" id="costChart" data-beat="1">
+        <div class="bar-row" data-model="luna">
+          <span class="bar-label">LUNA</span>
+          <div class="bar-track"><div class="bar-fill" data-input="1" data-output="6"></div></div>
+          <span class="bar-value"></span>
+        </div>
+        <div class="bar-row" data-model="terra">
+          <span class="bar-label">TERRA</span>
+          <div class="bar-track"><div class="bar-fill" data-input="2.5" data-output="15"></div></div>
+          <span class="bar-value"></span>
+        </div>
+        <div class="bar-row" data-model="sol">
+          <span class="bar-label">SOL</span>
+          <div class="bar-track"><div class="bar-fill" data-input="5" data-output="30"></div></div>
+          <span class="bar-value"></span>
+        </div>
+        <div class="bar-row accent-row" data-model="fable">
+          <span class="bar-label">FABLE&nbsp;5</span>
+          <div class="bar-track"><div class="bar-fill" data-input="10" data-output="50"></div></div>
+          <span class="bar-value"></span>
+        </div>
+      </div>
+
+      <p class="callout" data-beat="2">Sol above 272K input tokens: billed 2× input / 1.5× output for the whole request. Fable 5 cache reads: 0.1× base input. Neither shows up in the sticker price.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CH 04 — BENCHMARKS ===================== -->
+  <section class="chapter" data-chapter="4" data-title="04 · WHO'S #1 DEPENDS WHO'S ASKING">
+    <div class="stage stage-bench">
+      <h2 class="display-med" data-beat="0">Every benchmark has a winner.<br><span class="dim">Pick your benchmark.</span></h2>
+
+      <div class="bench-rows">
+        <div class="bench-row" data-beat="1">
+          <button class="bench-head" aria-expanded="false">
+            <span class="bench-name">Artificial Analysis — Intelligence Index</span>
+            <span class="bench-scores"><b class="win">Fable 5 60</b> <span class="dim">·</span> Sol 59</span>
+            <span class="chev">⌄</span>
+          </button>
+          <div class="bench-compare">
+            <div class="mini-bar"><span class="mini-label">Sol (max)</span><div class="mini-track"><div class="mini-fill" style="--w:98.3%"></div></div><span class="mini-num">59</span></div>
+            <div class="mini-bar win-bar"><span class="mini-label">Fable 5 (max)</span><div class="mini-track"><div class="mini-fill" style="--w:100%"></div></div><span class="mini-num">60</span></div>
+          </div>
+          <div class="bench-body">General-purpose reasoning across many task types, aggregated by a third-party lab. Third-party, not vendor-reported — the most neutral figure in this chapter. Fable 5 leads by a single point.</div>
+        </div>
+
+        <div class="bench-row" data-beat="2">
+          <button class="bench-head" aria-expanded="false">
+            <span class="bench-name">Artificial Analysis — Coding Agent Index</span>
+            <span class="bench-scores"><b class="win">Sol 80</b> <span class="dim">·</span> Fable 5 77</span>
+            <span class="chev">⌄</span>
+          </button>
+          <div class="bench-compare">
+            <div class="mini-bar win-bar"><span class="mini-label">Sol (max, Codex)</span><div class="mini-track"><div class="mini-fill" style="--w:100%"></div></div><span class="mini-num">80</span></div>
+            <div class="mini-bar"><span class="mini-label">Fable 5 (max)</span><div class="mini-track"><div class="mini-fill" style="--w:96.3%"></div></div><span class="mini-num">77</span></div>
+          </div>
+          <div class="bench-body">Agentic coding tasks end-to-end. OpenAI's framing of this same third-party number: "2.8 points above Fable 5, less than half the output tokens, less than half the time, about ⅓ the cost."</div>
+        </div>
+
+        <div class="bench-row" data-beat="3">
+          <button class="bench-head" aria-expanded="false">
+            <span class="bench-name">Terminal-Bench 2.1</span>
+            <span class="bench-scores"><b class="win">Sol Ultra 91.9</b> <span class="dim">·</span> Sol 88.8 <span class="dim">·</span> Fable 5 88.0</span>
+            <span class="chev">⌄</span>
+          </button>
+          <div class="bench-compare">
+            <div class="mini-bar"><span class="mini-label">Sol (base)</span><div class="mini-track"><div class="mini-fill" style="--w:96.6%"></div></div><span class="mini-num">88.8</span></div>
+            <div class="mini-bar win-bar"><span class="mini-label">Sol (Ultra)</span><div class="mini-track"><div class="mini-fill" style="--w:100%"></div></div><span class="mini-num">91.9</span></div>
+            <div class="mini-bar"><span class="mini-label">Fable 5</span><div class="mini-track"><div class="mini-fill" style="--w:95.8%"></div></div><span class="mini-num">88.0</span></div>
+          </div>
+          <div class="bench-body">Real terminal / command-line tasks in a sandboxed environment. Base Sol and Fable 5 are within a point of each other; Sol's 4-agent Ultra mode is what actually pulls ahead.</div>
+        </div>
+
+        <div class="bench-row contested" data-beat="4">
+          <button class="bench-head" aria-expanded="false">
+            <span class="bench-name">SWE-bench Pro <span class="warn">⚠ not apples-to-apples</span></span>
+            <span class="bench-scores">Fable 5 80.3<span class="dim">*</span> <span class="dim">·</span> Sol 64.60</span>
+            <span class="chev">⌄</span>
+          </button>
+          <div class="bench-compare">
+            <div class="mini-bar"><span class="mini-label">Sol (public set)</span><div class="mini-track"><div class="mini-fill" style="--w:80.5%"></div></div><span class="mini-num">64.60</span></div>
+            <div class="mini-bar win-bar"><span class="mini-label">Fable 5 (own scaffold)*</span><div class="mini-track"><div class="mini-fill" style="--w:100%"></div></div><span class="mini-num">80.3</span></div>
+          </div>
+          <div class="bench-body">Real-world software-engineering pull requests. Anthropic's 80.3% used <em>Anthropic's own scaffolding</em> — independent commentators flagged it as contested, not a neutral harness. Sol's 64.60 is from the public evaluation set. Shown side by side deliberately — this is not a fair fight.</div>
+        </div>
+
+        <div class="bench-row" data-beat="5">
+          <button class="bench-head" aria-expanded="false">
+            <span class="bench-name">Agents' Last Exam <span class="warn">OpenAI-reported</span></span>
+            <span class="bench-scores"><b class="win">Sol 53.6</b> <span class="dim">·</span> Fable 5 40.5</span>
+            <span class="chev">⌄</span>
+          </button>
+          <div class="bench-compare">
+            <div class="mini-bar win-bar"><span class="mini-label">Sol</span><div class="mini-track"><div class="mini-fill" style="--w:100%"></div></div><span class="mini-num">53.6</span></div>
+            <div class="mini-bar"><span class="mini-label">Fable 5 (adaptive)</span><div class="mini-track"><div class="mini-fill" style="--w:75.6%"></div></div><span class="mini-num">40.5</span></div>
+          </div>
+          <div class="bench-body">Long-horizon professional workflows across 55 fields. Quoted directly from OpenAI's own launch post — no independent re-run found. Treat the 13.1-point gap as OpenAI's claim, not a verified neutral score.</div>
+        </div>
+      </div>
+      <p class="footnote" data-beat="5">GDPval was researched and dropped — the two published figures use mismatched benchmark versions and aren't safely comparable.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CH 05 — REAL WORLD / OPINION ===================== -->
+  <section class="chapter" data-chapter="5" data-title="05 · WHAT PEOPLE ARE SAYING">
+    <div class="stage stage-opinion">
+      <h2 class="display-med" data-beat="0">Off the benchmark, on the record.</h2>
+      <p class="caption italic" data-beat="0">Opinion and community findings — not official scores.</p>
+
+      <div class="opinion-pills" data-beat="1" id="opinionPills">
+        <button class="pill active" data-panel="0">"Manager vs worker"</button>
+        <button class="pill" data-panel="1">The context-window cut</button>
+        <button class="pill" data-panel="2">Whose scaffold, whose score</button>
+      </div>
+
+      <div class="opinion-panels" data-beat="1">
+        <div class="opinion-panel active" data-panel="0">
+          <span class="opinion-tag">OPINION</span>
+          <p class="opinion-text">Community framing that circulated around the Sol launch: Fable 5 plans and delegates across multi-day runs like a manager; Sol executes fast and cheap like a worker. Not an official claim from either company — kept here labeled as opinion, not fact.</p>
+        </div>
+        <div class="opinion-panel" data-panel="1">
+          <span class="opinion-tag">PRODUCT REALITY</span>
+          <p class="opinion-text">Sol's spec says 1.05M tokens of context. In practice, OpenAI's Codex product quietly cut the working context from 372K → 272K → 258K after user complaints — a product limit, not a model limit. Anthropic keeps Fable 5's full 1M window in its Cowork product, and rations by other means instead.</p>
+        </div>
+        <div class="opinion-panel" data-panel="2">
+          <span class="opinion-tag">METHODOLOGY</span>
+          <p class="opinion-text">Vendors pick the harness that flatters them. Fable 5's headline SWE-bench Pro number used Anthropic's own scaffolding; Sol's headline numbers on Terminal-Bench and Agents' Last Exam are OpenAI's own launch-day claims. A vendor benchmark is a marketing artifact until someone neutral reruns it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CH 06 — VERDICT ===================== -->
+  <section class="chapter" data-chapter="6" data-title="06 · VERDICT">
+    <div class="stage stage-verdict">
+      <h2 class="display-med" data-beat="0">There is no universal winner.</h2>
+
+      <div class="verdict-rows">
+        <div class="verdict-row" data-beat="1">
+          <span class="verdict-label">Cheapest agentic coding at scale</span>
+          <span class="verdict-value accent">SOL / TERRA / LUNA</span>
+        </div>
+        <div class="verdict-row" data-beat="2">
+          <span class="verdict-label">Higher raw intelligence, longest autonomous runs</span>
+          <span class="verdict-value accent">FABLE 5</span>
+        </div>
+        <div class="verdict-row" data-beat="3">
+          <span class="verdict-label">Effort ladder</span>
+          <span class="verdict-value">Nearly identical five rungs — OpenAI bolts on parallel-agent Ultra; Anthropic leaves that to the harness</span>
+        </div>
+      </div>
+
+      <div class="reco-toggle" data-beat="4" id="recoToggle">
+        <div class="segmented" role="tablist" aria-label="Recommendation focus">
+          <button class="seg-btn active" data-reco="coding">Coding-first</button>
+          <button class="seg-btn" data-reco="knowledge">Knowledge-first</button>
+        </div>
+        <p class="reco-text" id="recoText">Coding-heavy, cost-sensitive, high-volume agents → <strong>GPT-5.6 Terra or Luna</strong>. Hardest single agentic-coding runs → <strong>Sol</strong>, cheaper than Fable 5 at similar Coding Agent Index scores.</p>
+      </div>
+
+      <p class="caption italic" data-beat="4">Pick by workload, not by hype. Drop your own test in the comments.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CH 07 — SOURCES ===================== -->
+  <section class="chapter" data-chapter="7" data-title="07 · SOURCES">
+    <div class="stage stage-sources">
+      <h2 class="display-med" data-beat="0">Sources</h2>
+      <p class="caption italic" data-beat="0">Every claim → source → date checked. Full trace in <span class="mono-tiny">RESEARCH.md</span>.</p>
+
+      <div class="source-accordion" data-beat="1">
+        <div class="accordion">
+          <button class="accordion-toggle" aria-expanded="false">Release &amp; naming ⌄</button>
+          <div class="accordion-body">
+            <ul class="source-list">
+              <li><a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov" target="_blank" rel="noopener">VentureBeat — GPT-5.6 Sol/Terra/Luna preview</a></li>
+              <li><a href="https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna" target="_blank" rel="noopener">AINews / latent.space — launch roundup</a></li>
+              <li><a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/" target="_blank" rel="noopener">Simon Willison — initial impressions of Claude Fable 5</a></li>
+              <li><a href="https://qz.com/anthropic-claude-opus-5-fable-5-price-072426" target="_blank" rel="noopener">Quartz — Claude Opus 5 at half Fable 5's price</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" aria-expanded="false">Pricing &amp; effort ⌄</button>
+          <div class="accordion-body">
+            <ul class="source-list">
+              <li><a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener">Claude Platform Docs — official pricing table</a></li>
+              <li><a href="https://platform.claude.com/docs/en/build-with-claude/effort" target="_blank" rel="noopener">Claude Platform Docs — the effort parameter</a></li>
+              <li><a href="https://apidog.com/blog/gpt-5-6-pricing/" target="_blank" rel="noopener">apidog.com — GPT-5.6 pricing breakdown</a></li>
+              <li><a href="https://www.toolcolumn.com/learn/gpt-5-6-max-vs-ultra" target="_blank" rel="noopener">ToolColumn — GPT-5.6 Max vs Ultra</a></li>
+              <li><a href="https://github.com/openai/codex/issues/31860" target="_blank" rel="noopener">GitHub openai/codex#31860 — context-window cap dispute</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" aria-expanded="false">Benchmarks ⌄</button>
+          <div class="accordion-body">
+            <ul class="source-list">
+              <li><a href="https://artificialanalysis.ai/articles/gpt-5-6-has-landed" target="_blank" rel="noopener">Artificial Analysis — GPT-5.6 has landed</a></li>
+              <li><a href="https://x.com/OpenAI/status/2075271425548795909" target="_blank" rel="noopener">OpenAI on X — Coding Agent Index claim</a></li>
+              <li><a href="https://x.com/OpenAI/status/2075271423992680532" target="_blank" rel="noopener">OpenAI on X — Agents' Last Exam claim</a></li>
+              <li><a href="https://techjacksolutions.com/ai-brief/claude-fable-5s-swe-bench-pro-score-is-contested-what-indepe/" target="_blank" rel="noopener">Tech Jacks Solutions — SWE-bench Pro score contested</a></li>
+              <li><a href="https://claude5.ai/en/news/claude-fable-5-benchmarks-swe-bench-pro-80-percent" target="_blank" rel="noopener">claude5.ai — Fable 5 SWE-bench Pro 80.3%</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="footnote" data-beat="1">Research pass completed 2026-07-25 · Checked via live web search, official docs where available.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
