@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["--yes", "serve", "-l", "5500", "."],
       "port": 5500
+    },
+    {
+      "name": "paperphone",
+      "runtimeExecutable": "D:\\node.exe",
+      "runtimeArgs": ["D:\\Projects\\Paperphone\\scripts\\serve.js"],
+      "port": 4321
     }
   ]
 }
