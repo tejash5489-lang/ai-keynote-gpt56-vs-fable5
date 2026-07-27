@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["--yes", "serve", "-l", "5500", "."],
       "port": 5500
+    },
+    {
+      "name": "paperphone",
+      "runtimeExecutable": "D:\\node.exe",
+      "runtimeArgs": ["C:\\Users\\tejas\\AppData\\Local\\Temp\\claude\\D--AI-comparison--claude-worktrees-phone-website-design-analysis-f6f776\\0a82e89c-918c-452d-bfcd-ebeefbb4f6e2\\scratchpad\\serve.js"],
+      "port": 4321
     }
   ]
 }
